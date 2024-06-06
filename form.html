@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        background-color: brown;
+      }
+      /* label {
+        background-color: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Form Intro</h1>
+    <p>Lorem ipsum <span> dolor sit amet </span> consectetur.</p>
+    <details>
+        <summary> Click to view Details </summary>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, debitis! </p>
+    </details>
+    <form action="#">
+      <label for="userName">
+        UserName:
+        <input
+          id="userName"
+          name="userName"
+          type="text"
+          placeholder="Enter Your Name"
+          required
+          autofocus
+          value="Hari Priya"
+        />
+      </label>
+      <br />
+      <label for=""
+        >Email:
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Your Mail"
+          required
+        />
+      </label>
+      <br />
+      <label for=""
+        >Age:
+        <input
+          type="number"
+          name="age"
+          placeholder="Enter Your Age"
+          min="10"
+          max="30"
+          step="5"
+          required
+        /> </label
+      ><br />
+      <label id="label-password" for=""
+        >Password:
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Your Password"
+          required
+        />
+      </label>
+      <fieldset>
+        <legend > Select Your Gender </legend>
+        <div style="background-color: brown">
+            <input name="gender" type="radio" value="male" />Male <br />
+            <input name="gender" type="radio" value="female" />Female <br />
+            <input name="gender" type="radio" value="transGender" />Trans-Gender
+        </div>
+      </fieldset>
+      <select name="drop-gender" id="">
+        <option value="">Select Option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="transGender">Trans-Gender</option>
+      </select>
+      <br />
+      <label for=""
+        >Relavant Tech: <br />
+        <input name="rel-tech" type="checkbox" value="a-js" />Angular js <br />
+        <input name="rel-tech" type="checkbox" value="v-js" />Vue js <br />
+        <input name="rel-tech" type="checkbox" value="r-js" />React js <br />
+        <input name="rel-tech" type="checkbox" value="vi-js" />Vite js
+      </label>
+      <br />
+      <input type="date" />
+      <input type="datetime-local" />
+      <input type="week" />
+      <input type="month" />
+      <input type="image" alt="Sample" src="./images/img1.jpg" />
+      <input type="range" min="10" max="100" />
+      <input type="file" />
+      <input type="search" />
+      <input type="color" />
+      <input type="button" value="Trigger Action" />
+      <input type="reset" />
+      <input type="submit" />
+      <textarea cols="20" rows="10"></textarea>
+      <!-- <button type="submit">Submit</button>
+      <button type="button">Button</button>
+      <button type="reset">Reset</button> -->
+
+      <nav></nav>
+      <main></main>
+      <header></header>
+      <footer></footer>
+      <section></section>
+      <article></article>
+      <aside></aside>
+    </form>
+  </body>
+</html>
